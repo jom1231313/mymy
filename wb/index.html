@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example Website</title>
+	<style>
+		/* Header */
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+		}
+		header a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		/* Navigation */
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			margin: 0 10px;
+		}
+
+		/* Main Content */
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+		.button:hover {
+			background-color: #555;
+		}
+		h2 {
+			font-size: 24px;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			margin: 10px 0;
+		}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Example Website</a>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h1>Welcome to Example Website</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod semper diam at facilisis. Nullam vel eleifend eros, sit amet pharetra ipsum. Suspendisse potenti.</p>
+			<a href="#" class="button">Learn More</a>
+		</section>
+
+		<section>
+			<h2>Our Services</h2>
+			<ul>
+				<li>Service 1</li>
+				<li>Service 2</li>
+				<li>Service 3</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; Example Website</p>
+	</footer>
+
+	<script>
+		// Display current year in footer
+		const year = new Date().getFullYear();
+		document.querySelector('footer p').innerHTML += ` ${year}`;
+	</script>
+</body>
+</html>
